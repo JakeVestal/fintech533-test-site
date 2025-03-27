@@ -1,0 +1,7 @@
+---
+title: "new project title"
+---
+
+Hi everyone!
+
+This is a fintech demo site. :)
