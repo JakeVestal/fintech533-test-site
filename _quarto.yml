@@ -1,6 +1,9 @@
 project:
   type: website
 
+filters:
+  - shinylive
+
 website:
   title: "demosite"
   navbar:

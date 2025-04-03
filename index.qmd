@@ -1,7 +1,56 @@
 ---
-title: "new project title"
+title: Shinylive in Quarto example
+format: html
 ---
 
-Hi everyone!
 
-This is a fintech demo site. :)
+# FINTECH 533 2025
+
+- <http://ystrades.com/>
+- <https://drink970082.github.io/FinTech533-EVAlgoTrade/>
+
+
+Homework 2.2!
+
+your homework is to please do the following:
+
+0) **Make sure the instructor has added the URL you want to use to the list
+above!!!!** This is what will be graded
+
+1) write a brief outline of your trading strategy & plan.
+    - Discuss with Instructor & TAs over teams!!!!
+    - add it to your site
+    - main thing is: walk us through a single trade. Entry signal / exit
+    signal, plus other rules like stoploss.
+    - you'll may communicate with course instructor and TAs to ensure you
+    meet requirements.
+
+2) Obtain some (or all?) of the data you'll need -- features, prices, etc
+    - discuss this too!
+
+3) Add your plan as a nicely formatted text to your site, and push
+4) Add some data -- ANY data at all -- as a table to your site to
+practice/demonstrate how to add tables
+
+## Helpful info
+- cheatsheet of 'how to markdown' in quarto: <https://quarto
+.org/docs/authoring/markdown-basics.html>
+- You don't have to add a table explicitly, of course. There are plenty of
+packages for doing things like that, as in the example below
+
+
+```{python}
+#| label: tbl-planets
+#| tbl-cap: Astronomical object
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Sun","696,000",1.989e30],
+         ["Earth","6,371",5.972e24],
+         ["Moon","1,737",7.34e22],
+         ["Mars","3,390",6.39e23]]
+Markdown(tabulate(
+  table,
+  headers=["Astronomical object","R (km)", "mass (kg)"]
+))
+```

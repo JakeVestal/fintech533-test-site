@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>new project title – demosite</title>
+<title>Shinylive in Quarto example – demosite</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -107,15 +141,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#fintech-533-2025" id="toc-fintech-533-2025" class="nav-link active" data-scroll-target="#fintech-533-2025">FINTECH 533 2025</a>
+  <ul class="collapse">
+  <li><a href="#helpful-info" id="toc-helpful-info" class="nav-link" data-scroll-target="#helpful-info">Helpful info</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">new project title</h1>
+<h1 class="title">Shinylive in Quarto example</h1>
 </div>
 
 
@@ -132,10 +175,94 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hi everyone!</p>
-<p>This is a fintech demo site. :)</p>
+<section id="fintech-533-2025" class="level1">
+<h1>FINTECH 533 2025</h1>
+<ul>
+<li><a href="http://ystrades.com/" class="uri">http://ystrades.com/</a></li>
+<li><a href="https://drink970082.github.io/FinTech533-EVAlgoTrade/" class="uri">https://drink970082.github.io/FinTech533-EVAlgoTrade/</a></li>
+</ul>
+<p>Homework 2.2!</p>
+<p>your homework is to please do the following:</p>
+<ol start="0" type="1">
+<li><p><strong>Make sure the instructor has added the URL you want to use to the list above!!!!</strong> This is what will be graded</p></li>
+<li><p>write a brief outline of your trading strategy &amp; plan.</p>
+<ul>
+<li>Discuss with Instructor &amp; TAs over teams!!!!</li>
+<li>add it to your site</li>
+<li>main thing is: walk us through a single trade. Entry signal / exit signal, plus other rules like stoploss.</li>
+<li>you’ll may communicate with course instructor and TAs to ensure you meet requirements.</li>
+</ul></li>
+<li><p>Obtain some (or all?) of the data you’ll need – features, prices, etc</p>
+<ul>
+<li>discuss this too!</li>
+</ul></li>
+<li><p>Add your plan as a nicely formatted text to your site, and push</p></li>
+<li><p>Add some data – ANY data at all – as a table to your site to practice/demonstrate how to add tables</p></li>
+</ol>
+<section id="helpful-info" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-info">Helpful info</h2>
+<ul>
+<li>cheatsheet of ‘how to markdown’ in quarto: &lt;https://quarto .org/docs/authoring/markdown-basics.html&gt;</li>
+<li>You don’t have to add a table explicitly, of course. There are plenty of packages for doing things like that, as in the example below</li>
+</ul>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> [[<span class="st">"Sun"</span>,<span class="st">"696,000"</span>,<span class="fl">1.989e30</span>],</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>         [<span class="st">"Earth"</span>,<span class="st">"6,371"</span>,<span class="fl">5.972e24</span>],</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>         [<span class="st">"Moon"</span>,<span class="st">"1,737"</span>,<span class="fl">7.34e22</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>         [<span class="st">"Mars"</span>,<span class="st">"3,390"</span>,<span class="fl">6.39e23</span>]]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Markdown(tabulate(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  table,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  headers<span class="op">=</span>[<span class="st">"Astronomical object"</span>,<span class="st">"R (km)"</span>, <span class="st">"mass (kg)"</span>]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-planets" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="1">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-planets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Astronomical object
+</figcaption>
+<div aria-describedby="tbl-planets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="4">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Astronomical object</th>
+<th style="text-align: left;">R (km)</th>
+<th style="text-align: right;">mass (kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sun</td>
+<td style="text-align: left;">696,000</td>
+<td style="text-align: right;">1.989e+30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Earth</td>
+<td style="text-align: left;">6,371</td>
+<td style="text-align: right;">5.972e+24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Moon</td>
+<td style="text-align: left;">1,737</td>
+<td style="text-align: right;">7.34e+22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mars</td>
+<td style="text-align: left;">3,390</td>
+<td style="text-align: right;">6.39e+23</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
