@@ -12,6 +12,7 @@ format: html
 - **Alpha Signal**: <https://alphasignal533.com/>
 - **Quant Rookie**: <https://quantrookie.info>
 - **EV Algo Trade**: <http://evalgotrade.ltd>
+- **Buy Low Sell Smart**: <https://buylowsellsmart.com/>
 
 
 ## Homework 2.2!
