@@ -1,16 +1,13 @@
 ---
-title: Shinylive in Quarto example
+title: FINTECH 533
 format: html
 ---
 
-
-# FINTECH 533 2025
-
+# 2025 Projects
 - <http://ystrades.com/>
-- <https://drink970082.github.io/FinTech533-EVAlgoTrade/>
+- <http://alphas.blog/>
 
-
-Homework 2.2!
+## Homework 2.2!
 
 your homework is to please do the following:
 
@@ -31,10 +28,11 @@ above!!!!** This is what will be graded
 3) Add your plan as a nicely formatted text to your site, and push
 4) Add some data -- ANY data at all -- as a table to your site to
 practice/demonstrate how to add tables
+5) Add an image. Any image will do. Use the example on the cheatsheet below.
 
 ## Helpful info
-- cheatsheet of 'how to markdown' in quarto: <https://quarto
-.org/docs/authoring/markdown-basics.html>
+- cheatsheet of 'how to markdown' in quarto:
+<https://quarto.org/docs/authoring/markdown-basics.html>
 - You don't have to add a table explicitly, of course. There are plenty of
 packages for doing things like that, as in the example below
 
