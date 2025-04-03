@@ -1,11 +1,18 @@
 ---
-title: FINTECH 533
+title: 2025 Projects
 format: html
 ---
 
-# 2025 Projects
-- <http://ystrades.com/>
-- <http://alphas.blog/>
+## 2025 Project Sites:
+- **YS Trades**: <http://ystrades.com/>
+- **Alphas**: <http://alphas.blog/>
+- **Devil's Pair**: <https://devilspair.online/>
+- **Pineapple Garlic**: <http://pineapplegarlicxia.asia>
+- **MCFE**: <http://mcfe.tech>
+- **Alpha Signal**: <https://alphasignal533.com/>
+- **Quant Rookie**: <https://quantrookie.info>
+- **EV Algo Trade**: <http://evalgotrade.ltd>
+
 
 ## Homework 2.2!
 

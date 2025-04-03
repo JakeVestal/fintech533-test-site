@@ -1,11 +1,12 @@
 project:
   type: website
+  output-dir: docs
 
 filters:
   - shinylive
 
 website:
-  title: "demosite"
+  title: "FINTECH 533"
   navbar:
     left:
       - href: index.qmd
@@ -14,9 +15,6 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: styles.css
     toc: true
-
-
-
