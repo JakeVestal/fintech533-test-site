@@ -13,6 +13,8 @@ format: html
 - **Quant Rookie**: <https://quantrookie.info>
 - **EV Algo Trade**: <http://evalgotrade.ltd>
 - **Buy Low Sell Smart**: <https://buylowsellsmart.com/>
+- **Tradeflow Solutions**: <https://tradeflow.solutions/>
+- **MAG7 Alpha**: <https://mag7alpha.com/>
 
 
 ## Homework 2.2!
