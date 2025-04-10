@@ -21,6 +21,13 @@
     "text": "YS Trades: http://ystrades.com/\nAlphas: http://alphas.blog/\nDevil’s Pair: https://devilspair.online/\nPineapple Garlic: http://pineapplegarlicxia.asia\nMCFE: http://mcfe.tech\nAlpha Signal: https://alphasignal533.com/\nQuant Rookie: https://quantrookie.info\nEV Algo Trade: http://evalgotrade.ltd\nBuy Low Sell Smart: https://buylowsellsmart.com/\nTradeflow Solutions: https://tradeflow.solutions/\nMAG7 Alpha: https://mag7alpha.com/"
   },
   {
+    "objectID": "index.html#final-hw",
+    "href": "index.html#final-hw",
+    "title": "2025 Projects",
+    "section": "FINAL HW!!!!!",
+    "text": "FINAL HW!!!!!\nContinue working with TAs and instructor on your site. By next week, add an interactive plot! Here’s a demo using OJS:\n\ndata = FileAttachment(\"./palmer-penguins.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nviewof bill_length_min = Inputs.range(\n  [32, 50],\n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"],\n  { value: [\"Torgersen\", \"Biscoe\"],\n    label: \"Islands:\"\n  }\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfiltered = data.filter(function(penguin) {\n  return bill_length_min &lt; penguin.bill_length_mm &&\n         islands.includes(penguin.island);\n})\n\n\n\n\n\n\n\nPlot.rectY(filtered,\n  Plot.binX(\n    {y: \"count\"},\n    {x: \"body_mass_g\", fill: \"species\", thresholds: 20}\n  ))\n  .plot({\n    facet: {\n      data: filtered,\n      x: \"sex\",\n      y: \"species\",\n      marginRight: 80\n    },\n    marks: [\n      Plot.frame(),\n    ]\n  }\n)"
+  },
+  {
     "objectID": "index.html#homework-2.2",
     "href": "index.html#homework-2.2",
     "title": "2025 Projects",
