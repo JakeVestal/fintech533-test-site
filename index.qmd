@@ -15,9 +15,14 @@ format: html
 - **Buy Low Sell Smart**: <https://buylowsellsmart.com/>
 - **Tradeflow Solutions**: <https://tradeflow.solutions/>
 - **MAG7 Alpha**: <https://mag7alpha.com/>
+- **S&C Trading**: <https://thesctrading.com/>
 
 ## FINAL HW!!!!!
-Continue working with TAs and instructor on your site. By next week, add an
+Continue working with TAs and instructor on your site. By next week,
+
+1) A blotter
+2) A ledger
+add an
 interactive plot! Here's a demo using OJS:
 
 ```{ojs}
