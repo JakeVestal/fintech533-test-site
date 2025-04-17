@@ -3,6 +3,8 @@ title: 2025 Algorithmic Trading Projects
 format: html
 ---
 In no particular order, the 12 Projects of Algo-1 2025 can be found below.
+These projects are currently under frequent and active development, with a
+completion date of Monday, 05 May 2025.
 
 ### [**YS Trades**](https://ystrades.com/)
 Short MSTR. Buy Bitcoin.
