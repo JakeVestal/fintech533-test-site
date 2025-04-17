@@ -1,5 +1,5 @@
 ---
 title: "About"
 ---
-
-About this site
+This site was created in fulfillment of the final project of the 2025
+Algorithmic Trading 1 couse taught by [Jake Vestal](https://www.linkedin.com/in/jakevestal/)
