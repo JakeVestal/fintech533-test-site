@@ -1,0 +1,98 @@
+
+## FINAL HW!!!!!
+Continue working with TAs and instructor on your site. By next week,
+
+
+1) A blotter
+2) A ledger
+add an
+interactive plot! Here's a demo using OJS:
+
+```{ojs}
+data = FileAttachment("./palmer-penguins.csv").csv({ typed: true })
+```
+
+```{ojs}
+viewof bill_length_min = Inputs.range(
+  [32, 50],
+  {value: 35, step: 1, label: "Bill length (min):"}
+)
+viewof islands = Inputs.checkbox(
+  ["Torgersen", "Biscoe", "Dream"],
+  { value: ["Torgersen", "Biscoe"],
+    label: "Islands:"
+  }
+)
+```
+```{ojs}
+filtered = data.filter(function(penguin) {
+  return bill_length_min < penguin.bill_length_mm &&
+         islands.includes(penguin.island);
+})
+```
+```{ojs}
+Plot.rectY(filtered,
+  Plot.binX(
+    {y: "count"},
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+
+## Homework 2.2!
+
+your homework is to please do the following:
+
+0) **Make sure the instructor has added the URL you want to use to the list
+above!!!!** This is what will be graded
+
+1) write a brief outline of your trading strategy & plan.
+    - Discuss with Instructor & TAs over teams!!!!
+    - add it to your site
+    - main thing is: walk us through a single trade. Entry signal / exit
+    signal, plus other rules like stoploss.
+    - you'll may communicate with course instructor and TAs to ensure you
+    meet requirements.
+
+2) Obtain some (or all?) of the data you'll need -- features, prices, etc
+    - discuss this too!
+
+3) Add your plan as a nicely formatted text to your site, and push
+4) Add some data -- ANY data at all -- as a table to your site to
+practice/demonstrate how to add tables
+5) Add an image. Any image will do. Use the example on the cheatsheet below.
+
+## Helpful info
+- cheatsheet of 'how to markdown' in quarto:
+<https://quarto.org/docs/authoring/markdown-basics.html>
+- You don't have to add a table explicitly, of course. There are plenty of
+packages for doing things like that, as in the example below
+
+
+```{python}
+#| label: tbl-planets
+#| tbl-cap: Astronomical object
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Sun","696,000",1.989e30],
+         ["Earth","6,371",5.972e24],
+         ["Moon","1,737",7.34e22],
+         ["Mars","3,390",6.39e23]]
+Markdown(tabulate(
+  table,
+  headers=["Astronomical object","R (km)", "mass (kg)"]
+))
+```
