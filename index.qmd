@@ -6,7 +6,7 @@ In no particular order, the 12 Projects of Algo-1 2025 can be found below.
 These projects are currently under frequent and active development, with a
 completion date of Monday, 05 May 2025.
 
-### [**YS Trades**](https://pairflow.online)
+### [YS Trades](https://pairflow.online)
 Short MSTR. Buy Bitcoin.
 
 ### [Devil's Pair](https://devilspair.online/):
